@@ -21,10 +21,3 @@ eureka:
 zuul:
   retryable: true 
   
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 5000     
