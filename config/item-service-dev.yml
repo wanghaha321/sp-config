@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 spring:
   application:
     name: item-service
@@ -9,8 +9,7 @@ spring:
     host: 192.168.64.140
     port: 5672
     username: admin
-    password: admin
-    
+    password: admin    
     
 server:   port: 8001
   
@@ -46,5 +45,3 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
-  
->>>>>>> branch 'master' of https://github.com/wanghaha321/sp-config.git
