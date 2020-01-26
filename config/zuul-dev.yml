@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 spring:
   application:
     name: zuul
@@ -25,3 +26,31 @@ zuul:
     order-service: /order-service/**
   retryable: true
       # zuul:
+=======
+spring:
+  application:
+    name: zuul
+  cloud:
+    config:
+      override-none: true
+  rabbitmq:
+    host: 192.168.64.140
+    port: 5672
+    username: admin
+    password: admin
+          
+server:
+  port: 3001
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+  
+zuul:
+  retryable: true 
+  
+>>>>>>> branch 'master' of https://github.com/wanghaha321/sp-config.git
